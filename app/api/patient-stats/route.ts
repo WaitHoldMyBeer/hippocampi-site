@@ -30,7 +30,7 @@ export async function GET(request: Request) {
         { status: 400 }
       );
     }
-
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     // 1) Count of assigned patients
     //    Filter by doctor_id = the one passed in query param
     const assignedResult = await sql`

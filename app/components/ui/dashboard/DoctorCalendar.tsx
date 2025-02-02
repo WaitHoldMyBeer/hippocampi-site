@@ -65,11 +65,6 @@ export default function DoctorCalendar({ doctorId }: DoctorCalendarProps) {
   }, [doctorId]);
 
   // Loading or error states
-  if (loading) {
-    return (
-      <p className="mt-4 text-gray-500">Loading doctor’s appointments...</p>
-    );
-  }
   if (error) {
     return <p className="mt-4 text-red-500">Error: {error}</p>;
   }
