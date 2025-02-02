@@ -1,12 +1,12 @@
 import { lusitana } from "@/app/components/ui/fonts";
-import DoctorCalendar from "../components/ui/dashboard/DoctorCalendar";
+import DoctorCalendar from "../../components/ui/dashboard/DoctorCalendar";
 // import { fetchAppointments } from "../lib/data";
 import UpcomingMeetings from "@/app/components/ui/dashboard/UpcomingMeetings";
-import DashboardCards from "../components/ui/dashboard/DashboardCards";
+import DashboardCards from "../../components/ui/dashboard/DashboardCards";
 import {
   DoctorCalendarSkeleton,
   UpcomingMeetingsSkeleton,
-} from "../components/ui/skeletons";
+} from "../../components/ui/skeletons";
 import { Suspense } from "react";
 
 export default async function Page() {

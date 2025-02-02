@@ -1,3 +1,4 @@
+import React from "react";
 // Loading animation
 const shimmer =
   "before:absolute before:inset-0 before:-translate-x-full before:animate-[shimmer_2s_infinite] before:bg-gradient-to-r before:from-transparent before:via-white/60 before:to-transparent";
@@ -137,7 +138,7 @@ export function TableRowSkeleton() {
   );
 }
 
-export function InvoicesMobileSkeleton() {
+export function PatientsMobileSkeleton() {
   return (
     <div className="mb-2 w-full rounded-md bg-white p-4">
       <div className="flex items-center justify-between border-b border-gray-100 pb-8">
@@ -161,24 +162,24 @@ export function InvoicesMobileSkeleton() {
   );
 }
 
-export function InvoicesTableSkeleton() {
+export function PatientsTableSkeleton() {
   return (
     <div className="mt-6 flow-root">
       <div className="inline-block min-w-full align-middle">
         <div className="rounded-lg bg-gray-50 p-2 md:pt-0">
           <div className="md:hidden">
-            <InvoicesMobileSkeleton />
-            <InvoicesMobileSkeleton />
-            <InvoicesMobileSkeleton />
-            <InvoicesMobileSkeleton />
-            <InvoicesMobileSkeleton />
-            <InvoicesMobileSkeleton />
+            <PatientsMobileSkeleton />
+            <PatientsMobileSkeleton />
+            <PatientsMobileSkeleton />
+            <PatientsMobileSkeleton />
+            <PatientsMobileSkeleton />
+            <PatientsMobileSkeleton />
           </div>
           <table className="hidden min-w-full text-gray-900 md:table">
             <thead className="rounded-lg text-left text-sm font-normal">
               <tr>
                 <th scope="col" className="px-4 py-5 font-medium sm:pl-6">
-                  Customer
+                  Patient
                 </th>
                 <th scope="col" className="px-3 py-5 font-medium">
                   Email

@@ -10,3 +10,14 @@ export type Appointment = {
   status: "scheduled" | "completed" | "canceled";
   zoom_link: string | null;
 };
+
+// /app/lib/definitions.ts
+export type Patient = {
+  id: string;
+  name: string;
+  email: string;
+  phone_number: string;
+  image_url: string;
+  notes: string;
+  created_at: string;
+};
