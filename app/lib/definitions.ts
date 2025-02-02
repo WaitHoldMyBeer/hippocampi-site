@@ -12,7 +12,7 @@ export type Appointment = {
 };
 
 // /app/lib/definitions.ts
-export type Patient = {
+export type User = {
   id: string;
   name: string;
   email: string;
@@ -20,4 +20,5 @@ export type Patient = {
   image_url: string;
   notes: string;
   created_at: string;
+  password: string;
 };
